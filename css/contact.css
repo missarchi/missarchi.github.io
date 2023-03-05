@@ -92,78 +92,7 @@ nav .navlinks li a:hover{
     color: #814519;
 
 }
-.container{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 4rem;
-}
-.container .hero-pic{
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 15px solid #221206;
-    box-shadow: 5px 7px 25px rgba(0, 0, 0, 0.5);
-}
-.hero-pic img{
-    height: 100%;
-    width: 100%;
-    transition: 0.5s;
-}
-.hero-pic img:hover{
-    transform: scale(1.2);
-}
-.hero-text{
-    max-width: 500px;
-    display: flex;
-    flex-direction: column;
-}
-.hero-text h5{
-    color: #221206;
-    font-size: 14px;
-}
-.hero-text h5 span{
-    color: #2f1909;
-    font-size: 16px;
-}
-.hero-text h1{
-    color: #221206;
-    font-size: 3rem;
-}
-.hero-text p{
-    color: #221206;
-}
-.btn-group{
-    margin: 45px 0;
-}
-.btn-group .btn{
-    border-color: #814519;
-    color: #fbf3ed;
-    background-color: #221206;
-    padding: 12px 25px;
-    margin: 5px 0px;
-    margin-right: 7px;
-    border-radius: 30px;
-    border: 2px solid #e5e5e5;
-    box-shadow: 0 10px -8px rgba(0 0 0 / 75%);
-}
-.btn-group .btn:hover{
-    background-color: #2f1909;
-}
-.btn.active{
-    border-color: #0e0702;
-}
-.hero-text .social i{
-    color: #221206;
-    font-size: 25px;
-    margin-right: 10px;
-    transition: 0.5s;
-}
-.hero-text .social i:hover{
-    color: #814519;
-    transform: rotate(360deg);
-}
+
 /*responsive design &displaying for small screen*/
 @media(max-width:930px)
 {
@@ -224,4 +153,59 @@ nav .navlinks li a:hover{
     .hero-text{
         padding: 40px 0px;
     }
+   
+}
+
+
+.col{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+.btn{
+    cursor: pointer;
+    margin: 10px 0 0 100px;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+    color: #fbf3ed;
+    background-color: #221206;
+    padding: 13px;
+    width: 250px;
+    
+}
+.btn:hover{
+    background-color: #814519;
+}
+input{
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    border-width: thick;
+    background-color: #fbf3ed;
+    padding: 13px;
+    margin-top: -100px;
+    width: 450px;
+    margin: 30px 0 0 100px;
+    
+} 
+textarea{
+    border-width: thick;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color: #fbf3ed;
+    padding: 13px;
+    width: 448px;
+    height: 52px;
+    margin: 90px 0 0 100px;
+}
+.form-control:focus{
+    outline: none;
+}
+.btn:focus{
+    outline: none;
 }

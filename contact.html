@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactpage- Archieliz Website</title>
+    <link rel="stylesheet" href="css/contact.css">
+    
+   <!--font awesome icon css-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+   
+</head>
+<script src="index.js"></script>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("JGHoOQ2F763eHcCCG");
+   })();
+</script>
+
+
+
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-a"></i>
+                    <div class="logo-text">Archieliz</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">About Me</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="contact.html">Contact Me</a></li>
+                        
+                    </ul>
+                </nav>
+            </header>
+
+            <script>
+                /*creatimg button click show hide bar*/
+                var togglebtn=document.querySelector(".togglebtn");
+                var nav=document.querySelector(".navlinks");
+                var links=document.querySelector(".navlinks li");
+            
+                togglebtn.addEventListener("click", function(){
+                    this.classList.toggle("click");
+                    nav.classList.toggle("open");
+                })
+                </script>
+
+                <!--contact-->
+
+                <body>
+                    <div class="row">
+        
+                        </div>
+                        <div class="col">
+                            <h1>Contact Me</h1>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="name" placeholder="Enter your name"/>
+                            
+                            </div>
+                            <div class="form-email">
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email"/>
+                            </div>
+                            <div class="form-group" >
+                                <textarea id="message" class="form-control" placeholder="What can I do for you?"></textarea>
+                                <button class="btn"onclick="sendMail()">S E N D</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </body>
+</body>
+</html>
+
