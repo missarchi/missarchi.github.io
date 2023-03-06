@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactpage- Archieliz Website</title>
+    <link rel="stylesheet" href="css/about.css">
+    
+   <!--font awesome icon css-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+   
+</head>
+
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-a"></i>
+                    <div class="logo-text">Archieliz</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="services.html">Blog</a></li>
+                        <li><a href="contact.html">Contact Me</a></li>
+                        
+                    </ul>
+                </nav>
+            </header>
+            <section id="about">
+                <div class="container">
+                  <h2 class="section-heading" data-outline="about">About</h2>
+                  <div class="wrapper">
+                    <div class="left">
+                      <div class="card">
+                        <div class="img">
+                          <img src="./images/pro.png" alt=",,,">
+                        </div>
+                        <p class="card-desc">I’m a freelance web designer and developer based in Bangladesh. I love the Web platform
+                          and I need to improve it for
+                          everybody. What's more, I believe myself to be totally honored that I will assemble it professionally.</p>
+                        <h3 class="card-name">AMY Jr</h3>
+                        <p class="card-sub-title">CEO of My Com</p>
+                      </div>
+                    </div>
+                    <div class="right">
+                      <p class="subheading">Hi! This is AMY</p>
+                      <h2 class="slogan">Freelance Web Designer</h2>
+                      <p class="right-text">I work with companies and agencies around the world, building Web sites and application
+                        UIs with strong focus on
+                        responsive design, accessibility, performance, and the latest in the area of front-end (Javascript, react,
+                        gatsby, node,
+                        Python, djengo)
+                        I also speak and run workshops across the globe, also focusing on CSS, SVG, Responsive Design and
+                        accessibility,
+                        covering practical tips on how to build full stack using modern tools and techniques that scale and are
+                        future-proof.
+                      </p>
+                      <div class="buttons">
+                        <a href="#" class="primary-btn" download="">Download Resume</a>
+                        <a href="contact.html" class="primary-btn outline">Hire Me</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+            
+            
+            <script>
+                /*creatimg button click show hide bar*/
+                var togglebtn=document.querySelector(".togglebtn");
+                var nav=document.querySelector(".navlinks");
+                var links=document.querySelector(".navlinks li");
+            
+                togglebtn.addEventListener("click", function(){
+                    this.classList.toggle("click");
+                    nav.classList.toggle("open");
+                })
+                </script>
+
+
+
+
+</body>
+</html>
